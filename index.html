@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Hand Jester App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container" >
+            <center>
+                <div id="heading_div">
+                    <p><b>Hand Jester App</b></p>
+                    <span>👍</span>
+                     <span>👌</span>
+                     <span>🤟</span>
+                     <span>✌️</span>
+                     <span>🤙</span>
+
+                </div>
+                <br>
+                
+                <h2><b>These Hand Jesters can be recognized by this app</b></h2>
+                <div id="jester_showing_div">
+                    <span>👍</span>
+                    <span>👌</span>
+                    <span>✌️</span>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div is="main_items">
+                    <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 Webcam_veiw_div">
+                        <label class="btn btn-info" style="font-size: 20px;"><b>Webcam Veiw-</b></label>
+                        <div id="camera"></div>
+    
+                        <br>
+                        <button type="button" class="btn btn-success take_snapshot" onclick="take_snapshot()" >Take Snapshot</button>
+                        <br>
+                    </div>
+    
+                  
+                   
+    
+    
+                    <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12 snapshot_div">
+                        <label class="btn btn-info" style="font-size: 20px;">Snapshot-</label>
+                        <div id="snapshot">
+                        </div>
+                        <br>
+                        <button type="button" class="btn btn-warning" onclick="Check()">Predict Emoji</button>
+                        <br>
+                    </div>
+                </div>
+<br>
+<br>
+
+                <div id="prediction_div">
+                    <h3 >First Prediction is -<h3 id="Prediction_1"></h3></h3>
+                    <h3 >Second Prediction is -<h3 id="Prediction_2"></h3></h3>
+                </div>
+    
+            </center>
+
+        </div>
+    </body>
+
+</html>
